@@ -1,0 +1,147 @@
+body{
+    background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000)
+}
+    .navbar
+{
+
+    background-color: black;
+    border-radius: 30px;
+    width: 100%;
+    
+}
+.tjho{
+    color: antiquewhite;
+    padding-right: 24px;
+    font-size: 30px;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.navbar li a i{
+    color: aliceblue;
+    font-size: 20px;
+}
+.navbar li a:hover{
+    color: red
+}
+.search{
+    float: left;
+    color: white;
+    padding: 14px 75px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 6px 17px;
+    width: 300px;
+}
+.navbar ul  li ul{
+    display:grid;
+    position:absolute;
+    padding-left: 0px;
+    top: 85px;
+
+opacity: 0;
+
+}
+.navbar ul li:hover > ul{
+    top :70px;
+    visibility: visible;
+opacity: 1;
+
+transition: 0.3s linear;
+}
+.uttam{
+background-color: wheat;
+}
+.uttam li {
+background-color: rgb(41, 45, 48) ;
+position: relative;
+border: 2px solid greenyellow;
+border-top: none;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+
+  #container > div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    background-color:white;
+    border-radius: 10px;
+
+  }
+
+  #container > div > div {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  img{
+      height: 150px;
+      width: 40%; 
+  }
+  p{
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 5%;
+top: 15px;
+  }
+  
+  @media all and (min-width: 300px) and (max-width: 750px){
+      .navbar{
+          flex-direction: column;
+      }
+     
+      .navbar input{
+          display: none;
+      } 
+      .navbar{
+          width: 100%;
+      }
+      .navbar li{
+          flex-direction: column;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 100px);
+        gap: 20px;
+        width: 70%;
+        margin: 0 auto;
+        
+      }
+      img{
+        height: 50px;
+        width: 35%; 
+    }
+    p{
+        font-size: 10px;
+        font-weight: bold;
+    }
+  }
